@@ -1,0 +1,235 @@
+<html>
+<head>
+    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+   
+
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVTjpOATID6Ie7NHFPkI9spyIsb_pHAFE",
+    authDomain: "college-fest-47a11.firebaseapp.com",
+    databaseURL: "https://college-fest-47a11.firebaseio.com",
+    projectId: "college-fest-47a11",
+    storageBucket: "college-fest-47a11.appspot.com",
+    messagingSenderId: "1059707688159"
+  };
+  firebase.initializeApp(config);
+</script>
+    
+    </head>
+   
+ <body style="background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31-800x450.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;">
+     
+     
+     
+          
+
+    <nav class="navbar navbar-expand-lg navbar-light  " style="background-color: white; ">
+ 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+         <li class="nav-item">
+        <a class="nav-link" href="main.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hospitality.html">Hospitality </a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="register.html">Register </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="emerge.html">Emergencies</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="home.html">Confetti<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+     
+     
+     <div class="card" style="width: 20rem; margin-left: 35%; margin-top: 15%;">
+  <h5 class="card-header">Register</h5>
+  <div class="card-body">
+    
+    <table>
+  <tr>
+       <td>First Name: </td>
+   <td><input type="text" name="fn" id="fn" /></td>
+  </tr>
+  <tr>
+   <td>Last Name: </td>
+   <td><input type="text" name="ln" id="ln" /></td>
+      
+      
+  </tr>
+     
+      <tr>
+   <td>Mail id: </td>
+   <td><input type="text" name="mail" id="mail" /></td>
+      
+      
+  </tr>
+     
+     <tr>
+   <td>Phone number: </td>
+   <td><input type="text" name="pn" id="pn" /></td>
+      
+      
+  </tr>
+        
+        <tr>
+   <td>College name: </td>
+   <td><input type="text" name="cn" id="cn" /></td>
+      
+      
+  </tr>
+        
+        
+     <tr>
+    <td><input type="checkbox" name="vehicle1" value="Bike"> Food</td></tr>
+        <tr>
+  <td><input type="checkbox" name="vehicle2" value="Car"> Room allocation</td></tr>
+  <tr><td><input type="checkbox" name="vehicle3" value="Boat" > Confetti </td></tr>
+        <tr><td><input type="checkbox" name="vehicle3" value="Boat" > Transportation </td></tr>
+ 
+     
+     
+     
+     
+    
+     
+  <tr>
+   <td colspan="2">
+    <input type="button" value="Register" onclick="fn(); " style="background-color: bla
+                                                                  ;" />
+    
+   </td>
+  </tr>
+ </table>
+ 
+      <p>For transaction using paytm:</p>
+      
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALAAAACwCAMAAACYaRRsAAAABlBMVEX///8AAABVwtN+AAABe0lEQVR4nO3UQW7DUAgE0Pj+l+6ukiuMBpxYrfpml+TDPDZ5HdO8Tim/DH47P5m0AwMDA0fgbmvZ/565xRZgYGDgCfio0lWVL7fgqB0YGBj4CXA+DgwMDPxLweeMDwUGBgZ+BtwlAI+3LOaAgYGBI3CeoHj8adIODAwMHLQvMl5+u/FmgD8d4E8HeFg8fhnYuivG48DAwMArcLe8u6Lb0tmCAWBgYOAVuFt38+WWf1ELDAwM3IMDTbC87Oj4wYU9AhgYGPgC0WmCY/InwTHRHDAwMHAwN5EeVfK5sSaSAgMDA9+2BYeX492F3aefc8DAwMAR+KYmX5Y3XAwAAwMDR+AgXcd4WX72vgMYGPh/gsfJj8kZwMDAwG8Al8VdxlXjT2XR95fAwMDAEbhkdKj8yfbsPQMYGBj44p+w/G17U7l6HGBgYOBHwbmt29mRgIGBgT8MLl92vwXEzg0MDAw8A3cZV42v6CzAwMDAM3CeUhoMLGzAwMDAC/BfyxfTEzu5OzQbhQAAAABJRU5ErkJggg==" alt="Smiley face" width="72px" height="72px" style="margin-left: 35%;" >
+ 
+
+ 
+  </div>
+</div>
+
+
+ 
+ <script>
+ 
+     
+     
+       
+     function fn(){
+         
+                     
+   var fn = document.getElementById('fn').value;
+      var ln = document.getElementById('ln').value;
+      var pn = document.getElementById('pn').value;
+        
+  var mailid = document.getElementById('mail').value;
+var reg=/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        
+        if(mailid=="" )
+       alert('Enter valid mail ' );
+         else if(fn=="")
+             alert('Enter first name');
+         else if(ln=="")
+             alert('Enter last name');
+         else if(pn=="")
+             alert('Enter phone number');
+         else if(reg.test(mailid)==false)
+             alert('Invalid mail address');
+         else
+             save_user();
+        
+     }
+     
+     
+  var tblUsers = document.getElementById('tbl_users_list');
+  var databaseRef = firebase.database().ref('users/');
+  var rowIndex = 1;
+  
+  databaseRef.once('value', function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+   var childKey = childSnapshot.key;
+   var childData = childSnapshot.val();
+   
+   var row = tblUsers.insertRow(rowIndex);
+   var cellId = row.insertCell(0);
+   var cellName = row.insertCell(1);
+   cellId.appendChild(document.createTextNode(childKey));
+   cellName.appendChild(document.createTextNode(childData.user_name));
+   
+   rowIndex = rowIndex + 1;
+    });
+  });
+   
+  function save_user(){
+      
+      
+   var fn = document.getElementById('fn').value;
+      var ln = document.getElementById('ln').value;
+      var mail = document.getElementById('mail').value;
+      var pn = document.getElementById('pn').value;
+        var cn = document.getElementById('cn').value;
+        
+  
+   
+    
+   
+   var data = {
+      
+      
+    fn:fn,
+    ln: ln,
+       mail:mail,
+       pn:pn,
+       cn:cn
+       }
+   
+   var updates = {};
+   updates['/users/' + fn] = data;
+   firebase.database().ref().update(updates);
+   
+   alert('The user is created successfully!');
+   reload_page();
+  }
+  
+  
+  
+  function reload_page(){
+   window.location.reload();
+  }
+  
+ </script>
+     <script async>(function(w, d) { w.CollectId = "5c8cfc9cdc0a2557cf62915a"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+
+ 
+</body>
+
+    
+
+</html>
